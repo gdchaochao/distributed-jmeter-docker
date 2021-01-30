@@ -9,7 +9,7 @@ ENV PATH $JMETER_HOME/bin:$PATH
 # INSTALL PRE-REQ
 RUN apt-get update && \
     apt-get -y install \
-    wget net-tools unzip tcpdump iputils-ping curl
+    wget net-tools unzip tcpdump iputils-ping curl telnet
 
 # INSTALL JMETER BASE 
 RUN mkdir /jmeter
